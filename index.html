@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+
+
+    <title>Document</title>
+  </head>
+  <style>
+    #dashboard {
+      height: 50px;
+      width: 50px;
+      border-radius: 7px;
+      margin-left: 15px;
+      margin-top: 15px;
+      border:0px;
+    }
+    img {
+      height: 45px;
+      width: 45px;
+      position: relative;
+      right: 5px;
+      bottom: 1px;
+    }
+    #logo {
+      height: 80px;
+      background-color: none;
+    
+    }
+    #leftside {
+      height: 600px; 
+      position: fixed;
+      margin-top: 160px;
+    }
+    #menu
+    { 
+      
+      
+
+    }
+    #content
+    { 
+      margin-top: 160px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    #menu1
+    {
+             height: 80px;
+            
+             
+    }
+    #fbox
+    {
+      position:fixed;
+      
+    }
+    #rightside
+    {
+      margin-top: 160px;
+      position: fixed;
+      height: 600px;
+      
+    }
+    .icon
+    {
+      margin-left: 15px;
+      
+    }
+  
+   
+    #row1 
+    {
+      visibility: hidden;
+    }
+    #row2 
+    {
+      visibility: hidden;
+    }
+    #row3 
+    {
+      visibility: hidden;
+    }
+    #row4 
+    {
+      visibility: hidden;
+    }
+    #row5 
+    {
+      visibility: hidden;
+    }
+    #prev
+    {
+     
+      margin-left: 1100px;
+    }
+    label
+    {
+      font-style: italic;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    
+    <div class="container-fluid" id="fbox">
+      <div class="row">
+        <div class="col-1" id="logo"><button id="dashboard"><img src="logo.jpg" alt="" /></div>   
+        <div class="col-11" id="menu"></div></div>
+        <div class="row">
+           <div class="col-1"></div>
+          <div class="col-11" id="menu1"> 
+           <div><button id="prev"><i class="fa fa-chevron-left fa-1x" aria-hidden="true"></i>
+           </button> 
+            <button id="next"><i class="fa fa-chevron-right fa-1x" aria-hidden="true"></i>
+            </button>
+           </div>
+          </div>
+        </div>
+     </div>
+ 
+
+     <div class="container-fluid" >
+       <div class="row">
+         <div class="col-1" id="leftside">
+          
+          <div class="icon"><button style="border-radius: 10px;border:1px ;"><i class="fa fa-ticket fa-2x" aria-hidden="true" style="padding: 2px;"></i></button></div>
+          
+         </div>
+          <div class="offset-1 col-9" id="content">
+            <div  id ="row1"> 
+              <span id="s1"></span>
+              <label for="prior1">priority</label>
+                <select name="priority" id="prior1">
+                <option id="row11" value="1">Low</option>
+                <option id="row21" value="2">Medium</option>
+                <option id="row31" value="3">High</option>
+                <option id= "row41" value="4">Urgent</option>
+              </select>
+              <label for="st1">Status</label>
+              <select name="status1" id="st1">
+              <option id="srow11" value="1">Open</option>
+              <option id="srow21" value="2">Pending</option>
+              <option id="srow31" value="3">Resolved</option>
+              <option id= "srow41"value="4">Closed</option>
+              <option id="srow51" value="5">waiting for customer</option>
+              <option id= "srow61"value="6">waiting for Third Party</option>
+            </select>
+            <button id="r1">Delete</button>
+            </div>
+            <div  id="row2"><span id="s2"></span>
+              <label for="prior2">priority</label> 
+              <select name="priority2" id="prior2">
+                <option id="row12" value="1">Low</option>
+                <option id="row22" value="2">Medium</option>
+                <option id="row32" value="3">High</option>
+                <option id= "row42" value="4">Urgent</option>
+              </select>
+              <label for="st2">Status</label>
+              <select name="status2" id="st2">
+              <option id="srow12" value="1">Open</option>
+              <option id="srow22" value="2">Pending</option>
+              <option id="srow32" value="3">Resolved</option>
+              <option id= "srow42"value="4">Closed</option>
+              <option id="srow52" value="5">waiting for customer</option>
+              <option id= "srow62"value="6">waiting for Third Party</option>
+            </select>
+            <button id="r2">Delete</button>
+            </div>
+            <div  id ="row3" > <span id="s3"></span>
+               <label for="prior3">priority</label>
+              <select name="priority3" id="prior3">
+              <option id="row13" value="1">Low</option>
+              <option id="row23" value="2" >Medium</option>
+              <option id="row33" value="3">High</option>
+              <option id= "row43"value="4">Urgent</option>
+            </select>
+            <label for="st3">Status</label>
+              <select name="status3" id="st3">
+              <option id="srow13" value="1">Open</option>
+              <option id="srow23" value="2">Pending</option>
+              <option id="srow33" value="3">Resolved</option>
+              <option id= "srow43"value="4">Closed</option>
+              <option id="srow53" value="5">waiting for customer</option>
+              <option id= "srow63"value="6">waiting for Third Party</option>
+            </select> <button id="r3">Delete</button>
+             </div>
+            <div  id="row4"><span id="s4"></span>
+                 <label for="prior4">priority</label>
+                <select name="priority4" id="prior4">
+                <option id="row14" value="1">Low</option>
+                <option id="row24" value="2">Medium</option>
+                <option id="row34" value="3">High</option>
+                <option id= "row44"value="4">Urgent</option>
+              </select>
+              <label for="st4">Status</label>
+              <select name="status4" id="st4">
+              <option id="srow14" value="1">Open</option>
+              <option id="srow24" value="2">Pending</option>
+              <option id="srow34" value="3">Resolved</option>
+              <option id= "srow44"value="4">Closed</option>
+              <option id="srow54" value="5">waiting for customer</option>
+              <option id= "srow64"value="6">waiting for Third Party</option>
+            </select><button id="r4">Delete</button>
+            </div>
+            <div  id="row5"><span id="s5"></span>
+                <label for="prior5">priority</label>
+                <select name="priority5" id="prior5">
+                <option id="row15" value="1">Low</option>
+                <option id="row25" value="2">Medium</option>
+                <option id="row35" value="3">High</option>
+                <option id= "row45"value="4">Urgent</option>
+              </select>
+              <label for="st5">Status</label>
+              <select name="status5" id="st5">
+              <option id="srow15" value="1">Open</option>
+              <option id="srow25" value="2">Pending</option>
+              <option id="srow35" value="3">Resolved</option>
+              <option id= "srow45"value="4">Closed</option>
+              <option id="srow55" value="5">waiting for customer</option>
+              <option id= "srow65"value="6">waiting for Third Party</option>
+            </select><button id="r5">Delete</button>
+            </div>
+          </div>
+          <div class="offset-10 col-2" id="rightside">
+         <!--   <label for="desc">Description</label><textarea name="" id="desc" cols="18" rows="7" required></textarea>
+             <label for="sub">Subject</label><input id= "sub" type="text" placeholder="Subject" required>
+             <label for="email">E-MAIL</label><input type="text" id='email' placeholder="Email-id" required>
+              <label for="P">priority</label><br>
+              <select name="prior" id="p" required>
+                <option  value="1">Low</option>
+                <option  value="2">Medium</option>
+                <option  value="3">High</option>
+                <option  value="4">Urgent</option>
+              </select> <br>
+              <label for="st5">Status</label>
+              <select name="status" id="st" required>
+              <option  value="1">Open</option>
+              <option  value="2">Pending</option>
+              <option  value="3">Resolved</option>
+              <option  value="4">Closed</option>
+              <option  value="5">waiting for customer</option>
+              <option  value="6">waiting for Third Party</option>
+            </select>
+            <label for="cc-email">CC_E-MAIL</label><input id="cc" type="text" placeholder="cc-Email-id" required>
+            <button id="create">Create</button>-->
+          </div>
+       </div>
+     </div>
+
+
+        
+        
+      
+  
+         
+     <script src="main.js"></script>
+     
+  </body>
+</html>
